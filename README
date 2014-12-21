@@ -1,0 +1,37 @@
+NAME
+    Pod::Weaver::Role::DumpPerinciCmdLineScript - Role to dump
+    Perinci::CmdLine script
+
+VERSION
+    This document describes version 0.01 of
+    Pod::Weaver::Role::DumpPerinciCmdLineScript (from Perl distribution
+    Pod-Weaver-Role-DumpPerinciCmdLineScript), released on 2014-12-21.
+
+METHODS
+  $obj->dump_perinci_cmdline_script($input)
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Pod-Weaver-Role-DumpPerinciCmdLineScript>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/perlancar/perl-Pod-Weaver-Role-DumpPerinciCmdLineScr
+    ipt>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Role-DumpP
+    erinciCmdLineScript>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    perlancar <perlancar@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by perlancar@cpan.org.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
