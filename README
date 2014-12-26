@@ -3,9 +3,9 @@ NAME
     Perinci::CmdLine script
 
 VERSION
-    This document describes version 0.01 of
+    This document describes version 0.02 of
     Pod::Weaver::Role::DumpPerinciCmdLineScript (from Perl distribution
-    Pod-Weaver-Role-DumpPerinciCmdLineScript), released on 2014-12-21.
+    Pod-Weaver-Role-DumpPerinciCmdLineScript), released on 2014-12-26.
 
 METHODS
   $obj->dump_perinci_cmdline_script($input)

@@ -1,7 +1,7 @@
 package Pod::Weaver::Role::DumpPerinciCmdLineScript;
 
-our $DATE = '2014-12-21'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $DATE = '2014-12-26'; # DATE
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use Moose::Role;
@@ -26,7 +26,8 @@ sub dump_perinci_cmdline_script {
     # if file object is not a real file on the filesystem, put it in a temporary
     # file first so Perinci::CmdLine::Dump can see it.
     unless ($file->isa("Dist::Zilla::File::OnDisk")) {
-        my ($fh, $tempname) = tempfile();
+        require File::Temp;
+        my ($fh, $tempname) = File::Temp::tempfile();
         print $fh $file->content;
         close $fh;
         $filename = $tempname;
@@ -54,7 +55,7 @@ Pod::Weaver::Role::DumpPerinciCmdLineScript - Role to dump Perinci::CmdLine scri
 
 =head1 VERSION
 
-This document describes version 0.01 of Pod::Weaver::Role::DumpPerinciCmdLineScript (from Perl distribution Pod-Weaver-Role-DumpPerinciCmdLineScript), released on 2014-12-21.
+This document describes version 0.02 of Pod::Weaver::Role::DumpPerinciCmdLineScript (from Perl distribution Pod-Weaver-Role-DumpPerinciCmdLineScript), released on 2014-12-26.
 
 =head1 METHODS
 
